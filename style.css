@@ -214,17 +214,17 @@ header {
 .header__row {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 40px;
 }
 
 .header__description {
     width: 40%;
     max-width: 482px;
-    margin: 0 auto;
 }
 
 .header__description--para {
-    margin: 32px 0;
+    margin: 32px auto;
 }
 
 .header__email {
@@ -235,6 +235,35 @@ header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    margin: 0 auto;
+}
+
+.header__email--input {
+    width: 100%;
+    border-radius: 500px;
+    border: 2px solid rgb(229, 231, 235);
+    padding: 20px 192px 20px 32px;
+    color: rgb(36, 62, 99);
+    font-size: 16px;
+    font-weight: 500;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.header__email--btn {
+    z-index: 2;
+    margin: 8px;
+    height: calc(100% - 16px);
+    border-radius: 500px;
+    width: 160px;
+    border: none;
+    background-color: #6415ff;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    transition: all 300ms ease;
 }
 
 .header__description--title {
@@ -247,19 +276,19 @@ header {
 
 .header__customers {
     margin-top: 16px;
-    padding-right: 128px;
+    padding-right: 0;
     opacity: 0.5;
+    max-width: 100%;
 }
 
 .header__img--wrapper {
-    width: calc(100% - 40%);
+    width: 50%;
+    max-width: 768px;
 }
 
 .header__img {
     width: 100%;
-    max-width: 768px;
 }
-
 
 /* 
 
