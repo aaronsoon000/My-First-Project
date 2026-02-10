@@ -1449,6 +1449,12 @@ MOBILE RESPONSIVENESS ↓
     }
 }
 
+@media(max-width: 786px) {
+    .testimonials__img {
+        width: 40%;
+    }
+}
+
 @media(max-width: 768px) {
     #quality .row,
     #values .row {
